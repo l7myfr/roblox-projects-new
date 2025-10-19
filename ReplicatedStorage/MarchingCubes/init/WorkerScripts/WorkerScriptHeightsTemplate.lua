@@ -1,7 +1,7 @@
 -- @ScriptType: Script
 local actor : Actor = script.Parent
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local MarchCubes = require(ReplicatedStorage.init.MarchCubes)
+local MarchCubes = require(ReplicatedStorage.MarchingCubes.init.MarchCubes)
 local function CreatePart(pos)
 	local part = Instance.new("Part", workspace)
 	part.CastShadow = false
