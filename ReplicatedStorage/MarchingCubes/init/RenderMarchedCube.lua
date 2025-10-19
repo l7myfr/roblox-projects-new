@@ -46,9 +46,6 @@ function RenderMesh.Render(self)
 			local v1 = getOrCreateVertex(A)
 			local v2 = getOrCreateVertex(B)
 			local v3 = getOrCreateVertex(C)
-			--createpart(editableMesh:GetPosition(v1))
-			--createpart(editableMesh:GetPosition(v2))
-			--createpart(editableMesh:GetPosition(v3))
 			editableMesh:AddTriangle(v1, v2, v3)
 		end
 
