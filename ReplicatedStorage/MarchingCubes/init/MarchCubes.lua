@@ -108,7 +108,6 @@ function MarchCubes.ProcessChunk(self)
 	local zSteps = math.floor(WidthZ / Step)
 	local totalIterations = xSteps * ySteps * zSteps
 
-	-- You can define this externally to handle progress (e.g. update a UI)
 	local Value = Instance.new("IntValue")
 	Value.Name = `HeightActor_{self.ThreadId}`
 	Value.Parent = script
