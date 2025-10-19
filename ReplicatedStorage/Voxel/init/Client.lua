@@ -73,10 +73,9 @@ function Client:Start()
 	LP:WaitForChild("Backpack")
 	local function firetoolevent()
 		local Settings = {
-			VoxelSize = 3,
-			Anchor = true,
+			VoxelSize = 6,
 			ApplyForce = true,
-			Force = 15,
+			Force = 50,
 			ForceDirectionInflufencePart = LP.Character.Humanoid.RootPart,
 			ForceVector = Vector3.new(0,0, -1),
 			Regenerate = true,
