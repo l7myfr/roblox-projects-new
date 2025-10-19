@@ -148,7 +148,7 @@ function MarchCubes.ProcessChunk(self)
 				if verts and tris then
 					local base = #localVertices
 					table.move(verts, 1, #verts, base + 1, localVertices)
-					for _, t in ipairs(tris) do
+					for _, t in tris do
 						table.insert(localTriangles, t + base)
 					end
 				end
