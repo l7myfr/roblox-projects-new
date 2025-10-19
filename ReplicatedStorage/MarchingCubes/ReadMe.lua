@@ -2,8 +2,12 @@
 --[[
 
 showcase : 
-youtube.com/watch?v=DKEdPnLmEAo&list=PLdnew4_vXxjmZIz_x7UI4geo5ViV4xXY6&index=3
 https://www.youtube.com/watch?v=26I4RtL5B5s&list=PLdnew4_vXxjmZIz_x7UI4geo5ViV4xXY6&index=4
+https://youtu.be/vSCFmMk7XXs
+outdated:
+https://youtube.com/watch?v=DKEdPnLmEAo&list=PLdnew4_vXxjmZIz_x7UI4geo5ViV4xXY6&index=3
+
+
 resource/inspo:
 https://www.youtube.com/watch?v=M3iI2l0ltbE&t=178s
 
