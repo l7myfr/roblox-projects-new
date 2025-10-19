@@ -82,7 +82,6 @@ local function MarchCube(Position, cubeCorners, self, CellSize)
 	return VerticesTable, TrianglesTable
 end
 
--- Main chunk processing function
 function MarchCubes.ProcessChunk(self)
 	local localVertices = table.create(1000)
 	local localTriangles = table.create(3000)
@@ -127,7 +126,7 @@ function MarchCubes.ProcessChunk(self)
 					task.wait()
 				end
 				counter += 1
-
+				-- get all corners of the cube.. for uh.. to march cubes 
 				for i = 1, 8 do
 					local offset = Corners[i]
 					local mapX = math.floor(x + offset.x * Step)
