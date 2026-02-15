@@ -65,7 +65,6 @@ function SharedPooler.Return(poolName, part)
 	part.Transparency = 1
 	part.Position = Vector3.new(0, 10000, 0)
 
-	-- Reset physics properties if necessary
 	if part:IsA("BasePart") then
 		part.AssemblyLinearVelocity = Vector3.zero
 		part.AssemblyAngularVelocity = Vector3.zero
@@ -74,5 +73,6 @@ function SharedPooler.Return(poolName, part)
 	part.Parent = STORAGE_LOCATION
 	table.insert(poolData.AvailableParts, part)
 end
+
 
 return SharedPooler
