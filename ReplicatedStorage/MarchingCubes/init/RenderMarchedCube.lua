@@ -6,7 +6,7 @@ local function vectorKey(v)
 	return string.format("%.6f_%.6f_%.6f", v.X, v.Y, v.Z)
 end
 
-local MAX_TRIANGLES_PER_MESH = 20000
+local maxtriangles = 20000
 local function createpart(psotion, COlor)
 	local part = Instance.new("Part")
 	part.Shape = Enum.PartType.Ball
@@ -64,9 +64,9 @@ function RenderMesh.Render(self)
 
 	local totalTriangles = #triangleIndices // 3
 
-	for i = 0, totalTriangles - 1, MAX_TRIANGLES_PER_MESH do
+	for i = 0, totalTriangles - 1, maxtriangles do
 		local startTriangle = i
-		local endTriangle = math.min(i + MAX_TRIANGLES_PER_MESH - 1, totalTriangles - 1)
+		local endTriangle = math.min(i + maxtriangles - 1, totalTriangles - 1)
 
 		local startIndex = startTriangle * 3 + 1
 		local endIndex = endTriangle * 3 + 3
